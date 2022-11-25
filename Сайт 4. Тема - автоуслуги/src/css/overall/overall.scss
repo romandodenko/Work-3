@@ -1,0 +1,129 @@
+.container {
+  max-width: 1210px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (max-width: 991px) {
+    padding: 0 15px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 0 10px;
+  }
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+main {
+  flex: 1 1 auto;
+
+  &:not(:last-child) {
+    margin-bottom: 100px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 70px;
+    }
+
+    @media (max-width: 600px) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.title {
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000;
+
+  @media (max-width: 991px) {
+    font-size: 38px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 28px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 600px) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.call {
+  text-align: center;
+  &__title {
+    font-size: 32px;
+    color: #000;
+    line-height: 1.2;
+    font-weight: 700;
+    @media (max-width: 991px) {
+      font-size: 26px;
+    }
+    @media (max-width: 600px) {
+      font-size: 20px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 30px;
+      @media (max-width: 991px) {
+        margin-bottom: 25px;
+      }
+      @media (max-width: 600px) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 24px;
+    line-height: 1;
+    color: #fff;
+    font-weight: 400;
+    background-color: #2c4b05;
+    width: 200px;
+    min-height: 40px;
+    margin: 0 auto;
+    transition: color .2s ease-in-out, background-color .2s ease-in-out;
+    @media (max-width: 991px) {
+      font-size: 21px;
+      width: 160px;
+    }
+    @media (max-width: 600px) {
+      font-size: 18px;
+      width: 140px;
+    }
+    @media (any-hover: hover) {
+    &:hover {
+      color: #000;
+      background-color: #fff;
+    }
+    }
+    &:active {
+      color: #000;
+      background-color: #fff;
+     transition-duration: .1s;
+    }
+  }
+}
